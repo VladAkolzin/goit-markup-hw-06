@@ -116,6 +116,7 @@
 	}
 	.header-contacts-list {
 		flex-direction: row;
+		gap: 40px;
 	}
 	.header-contacts {
 		padding-top: 24px;
