@@ -1,11 +1,35 @@
+@media screen and (max-width: 427px) {
+
+}
 @media screen and (min-width: 428px) {
 	.container {
 			max-width: 428px;
+	}
+	.customers-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.footer-input {
+		width: 398px;
 	}
 }
 @media screen and (min-width: 768px) {
 	.container {
 		max-width: 768px;
+	}
+	.header-menu-list {
+		display: flex;
+	}
+	.header-menu-logo {
+		margin-right: 120px;
+	}
+	.header-contacts-list {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+	}
+	.menu-mob-button {
+		display: none;
 	}
 	.hero {
 		background-image: linear-gradient(to bottom, var(--grey-color), var(--grey-color)), url(../images/people-office-tab.jpg);
@@ -88,6 +112,13 @@
 	.container {
 		max-width: 1158px;
 		padding: 0 15px;
+	}
+	.header-contacts-list {
+		flex-direction: row;
+	}
+	.header-contacts {
+		padding-top: 24px;
+		padding-bottom: 24px;
 	}
 		.hero {
 			padding-top: 188px;
