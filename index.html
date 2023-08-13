@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
     <title>Document</title>
   </head>
   <body>
@@ -58,12 +59,101 @@
             </li>
           </ul>
         </address>
+        <button
+          data-menu-button
+          class="menu-mob-button js-open-menu"
+          type="button"
+        >
+          <svg class="menu-mob-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div data-menu class="mob-menu js-menu-container is-hidden">
+        <button
+          data-menu-button
+          type="button"
+          class="menu-mob-close js-close-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-navigation">
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link mob-current link" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-address-socials">
+          <address class="mob-contacts">
+            <ul class="mob-contacts-list list">
+              <li class="mob-contacts-item">
+                <a
+                  class="mob-contacts-link mob-menu-number link"
+                  href="tel:110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="header-contacts-item">
+                <a
+                  class="mob-contacts-link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon-list list">
+            <li class="mob-icon-item">
+              <a href="" class="mob-icon-link link"
+                ><svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a href="" class="mob-icon-link link"
+                ><svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a href="" class="mob-icon-link link"
+                ><svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-icon-item">
+              <a href="" class="mob-icon-link link"
+                ><svg class="mob-icon" width="24" height="24">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Effective Solutions for Your Business</h1>
+          <h1 class="hero-title">Effective Solutions For Your Business</h1>
           <button class="hero-btn button" data-modal-open type="button">
             Order Service
           </button>
@@ -155,12 +245,17 @@
           </ul>
         </div>
       </section>
+
       <section class="staff">
         <div class="container">
           <h2 class="staff-title">Our Team</h2>
           <ul class="staff-list list">
             <li class="staff-list-item">
               <img
+                srcset="
+                  ./images/mark_guerrero.jpg    1x,
+                  ./images/mark_guerrero-2x.jpg 2x
+                "
                 src="./images/mark_guerrero.jpg"
                 alt="mark"
                 width="264"
@@ -203,6 +298,7 @@
             </li>
             <li class="staff-list-item">
               <img
+                srcset="./images/tom_ford.jpg 1x, ./images/tom_ford-2x.jpg 2x"
                 src="./images/tom_ford.jpg"
                 alt="tom"
                 width="264"
@@ -243,6 +339,10 @@
             </li>
             <li class="staff-list-item">
               <img
+                srcset="
+                  ./images/camila_garcia.jpg    1x,
+                  ./images/camila_garcia-2x.jpg 2x
+                "
                 src="./images/camila_garcia.jpg"
                 alt="camila"
                 width="264"
@@ -281,6 +381,10 @@
             </li>
             <li class="staff-list-item">
               <img
+                srcset="
+                  ./images/daniel_wilson.jpg    1x,
+                  ./images/daniel_wilson-2x.jpg 2x
+                "
                 src="./images/daniel_wilson.jpg"
                 alt="daniel"
                 width="264"
@@ -513,5 +617,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
