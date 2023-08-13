@@ -13,6 +13,12 @@
 	.modal {
 		width: 392px;
 	}
+	.mob-menu-number {
+		font-size: 36px;
+	}
+	.mob-icon-list {
+		gap: 56px;
+	}
 }
 
 

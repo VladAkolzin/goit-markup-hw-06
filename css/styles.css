@@ -233,7 +233,7 @@ img {
 }
 .mob-menu-number {
 	font-family: 'Roboto', sans-serif;
-	font-size: 36px;
+	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.11;
 	font-style: normal;
@@ -243,7 +243,7 @@ img {
 }
 .mob-icon-list {
 	display: flex;
-	gap: 56px;
+	gap: 20px;
 }
 .mob-icon-link {
 	width: 40px;
