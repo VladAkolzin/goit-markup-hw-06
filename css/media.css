@@ -1,6 +1,4 @@
-@media screen and (max-width: 427px) {
 
-}
 @media screen and (min-width: 428px) {
 	.container {
 			max-width: 428px;
@@ -12,7 +10,12 @@
 	.footer-input {
 		width: 398px;
 	}
+	.modal {
+		width: 392px;
+	}
 }
+
+
 @media screen and (min-width: 768px) {
 	.container {
 		max-width: 768px;
@@ -107,6 +110,10 @@
 }
 .footer-input {
 	width: 264px;
+}
+.modal {
+	width: 408px;
+	padding: 72px 24px 24px 24px;
 }
 }
 @media screen and (min-width: 1158px) {
