@@ -59,19 +59,19 @@
             </li>
           </ul>
         </address>
-        <button class="menu-mob-button js-open-menu" type="button">
+        <button
+          class="menu-mob-button js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-mob-icon" width="32" height="22">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
-      <div class="mob-menu js-menu-container is-hidden">
-        <button
-          type="button"
-          class="menu-mob-close js-close-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
+      <div class="mob-menu js-menu-container is-hidden" id="mobile-menu">
+        <button type="button" class="menu-mob-close js-close-menu">
           <svg class="menu-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -612,12 +612,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
